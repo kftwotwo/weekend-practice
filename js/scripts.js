@@ -1,19 +1,20 @@
 $(document).ready(function() {
-  $("#input").submit(function(event) {
-    var nameSpan = $("input#name").val();
-    var phoneSpan = $("input#phone").val();
-    var emailSpan = $("input#email").val();
-    var subjectSpan = $("input#subject").val();
-    var messageSpan = $("input#message").val();
+  $("#outputForm").hide();
+  $("#inputForm").submit(function(event) {
+    event.preventDefault();
+    var nameSpan = $("#name").val();
+    var phoneSpan = $("#phone").val();
+    var emailSpan = $("#email").val();
+    var subjectSpan = $("#subject").val();
+    var messageSpan = $("#message").val();
 
-    $(".name").text(nameSpan);
-    $(".phone").text(phoneSpan);
-    $(".email").text(emailSpan);
-    $(".subject").text(subjectSpan);
-    $(".message").text(messageSpan);
-
+    $("#nameOut").text(nameSpan);
+    $("#phoneOut").text(phoneSpan);
+    $("#emailOut").text(emailSpan);
+    $("#subjectOut").text(subjectSpan);
+    $("#messageOut").text(messageSpan);
     $("#inputForm").hide();
     $("#outputForm").show();
   });
-  event.preventDeafult();
 });
+// write a function 

@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script src="js/jquery-3.1.1.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css" media="all">
     <link rel="stylesheet" href="css/styles.css" media="all">
@@ -12,27 +11,27 @@
     <div class="jumbotron">
       <h1>Form</h1>
     </div>
+    <div class="container">
     <form id="inputForm">
-      <div class="container">
-        <input type="text">
-        <label id="name">Name</label><br>
-        <input type="text">
-        <label id="email">Phone</label><br>
-        <input type="text">
-        <label id="email">Email</label><br>
-        <input type="text">
-        <label id="subject">Subject</label><br>
-        <input type="text">
-        <label id="message">Message</label><br>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </div>
+      <label>Name</label>
+        <input type="text" id="name"><br>
+        <label>Phone</label>
+        <input type="text" id="phone"><br>
+        <label>Email</label>
+        <input type="text" id="email"><br>
+        <label>Subject</label>
+        <input type="text" id="subject"><br>
+        <label>Message</label>
+        <input type="text" id="message"><br>
+        <button type="submit" class="button">Submit</button>
     </form>
-      <div id="outputForm">
-        <span class="name"></span><br>
-        <span class="phone"></span><br>
-        <span class="email"></span><br>
-        <span class="subject"></span><br>
-        <span class="messsage"></span><br>
-      </div>
+    <div id="outputForm">
+      <p id="nameOut"></p><br>
+      <p id="phoneOut"></p><br>
+      <p id="emailOut"></p><br>
+      <p id="subjectOut"></p><br>
+      <p id="messageOut"></p><br>
+    </div>
+  </div>
   </body>
 </html>
